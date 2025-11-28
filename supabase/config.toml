@@ -1,1 +1,13 @@
 project_id = "hdoekeopkxojmwnvzwwj"
+
+[functions.upload-evidence]
+verify_jwt = true
+
+[functions.analyze-threat]
+verify_jwt = true
+
+[functions.create-tracking-link]
+verify_jwt = true
+
+[functions.capture-geo]
+verify_jwt = false
