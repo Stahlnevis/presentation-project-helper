@@ -1,7 +1,10 @@
 import { Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const Navigation = () => {
+  const navigate = useNavigate();
+  
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
       <div className="container mx-auto px-6">
@@ -26,7 +29,10 @@ const Navigation = () => {
             <a href="#impact" className="text-sm font-medium text-foreground hover:text-secondary transition-colors">
               Impact
             </a>
-            <Button className="bg-secondary text-primary hover:bg-secondary/90 font-semibold">
+            <Button 
+              className="bg-secondary text-primary hover:bg-secondary/90 font-semibold"
+              onClick={() => navigate("/auth")}
+            >
               Get Started
             </Button>
           </div>

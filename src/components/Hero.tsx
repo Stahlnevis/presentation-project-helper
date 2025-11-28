@@ -1,8 +1,11 @@
 import { Shield, Lock, AlertTriangle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 import heroImage from "@/assets/hero-security.jpg";
 
 const Hero = () => {
+  const navigate = useNavigate();
+  
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with gradient overlay */}
@@ -44,10 +47,19 @@ const Hero = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in" style={{ animationDelay: '0.3s' }}>
-          <Button size="lg" className="bg-secondary text-primary hover:bg-secondary/90 font-semibold px-8 py-6 text-lg shadow-glow">
-            Explore Platform
+          <Button 
+            size="lg" 
+            className="bg-secondary text-primary hover:bg-secondary/90 font-semibold px-8 py-6 text-lg shadow-glow"
+            onClick={() => navigate("/auth")}
+          >
+            Get Started Now
           </Button>
-          <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 px-8 py-6 text-lg backdrop-blur-sm">
+          <Button 
+            size="lg" 
+            variant="outline" 
+            className="border-white/30 text-white hover:bg-white/10 px-8 py-6 text-lg backdrop-blur-sm"
+            onClick={() => document.getElementById('tools')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Learn More
           </Button>
         </div>
