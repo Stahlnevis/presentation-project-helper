@@ -14,7 +14,206 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      evidence_items: {
+        Row: {
+          blockchain_timestamp: string | null
+          created_at: string | null
+          description: string | null
+          evidence_type: string
+          file_hash: string
+          file_url: string | null
+          id: string
+          metadata: Json | null
+          status: string | null
+          title: string
+          updated_at: string | null
+          user_id: string
+        }
+        Insert: {
+          blockchain_timestamp?: string | null
+          created_at?: string | null
+          description?: string | null
+          evidence_type: string
+          file_hash: string
+          file_url?: string | null
+          id?: string
+          metadata?: Json | null
+          status?: string | null
+          title: string
+          updated_at?: string | null
+          user_id: string
+        }
+        Update: {
+          blockchain_timestamp?: string | null
+          created_at?: string | null
+          description?: string | null
+          evidence_type?: string
+          file_hash?: string
+          file_url?: string | null
+          id?: string
+          metadata?: Json | null
+          status?: string | null
+          title?: string
+          updated_at?: string | null
+          user_id?: string
+        }
+        Relationships: []
+      }
+      geo_captures: {
+        Row: {
+          browser_fingerprint: string | null
+          captured_at: string | null
+          device_info: Json | null
+          geolocation: Json | null
+          id: string
+          ip_address: string | null
+          screenshot_url: string | null
+          tracking_link_id: string
+        }
+        Insert: {
+          browser_fingerprint?: string | null
+          captured_at?: string | null
+          device_info?: Json | null
+          geolocation?: Json | null
+          id?: string
+          ip_address?: string | null
+          screenshot_url?: string | null
+          tracking_link_id: string
+        }
+        Update: {
+          browser_fingerprint?: string | null
+          captured_at?: string | null
+          device_info?: Json | null
+          geolocation?: Json | null
+          id?: string
+          ip_address?: string | null
+          screenshot_url?: string | null
+          tracking_link_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "geo_captures_tracking_link_id_fkey"
+            columns: ["tracking_link_id"]
+            isOneToOne: false
+            referencedRelation: "tracking_links"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      linked_attackers: {
+        Row: {
+          attacker_fingerprint: string
+          behavioral_patterns: Json | null
+          first_seen: string | null
+          id: string
+          incident_count: number | null
+          known_aliases: Json | null
+          last_seen: string | null
+          platforms: Json | null
+          risk_score: number | null
+        }
+        Insert: {
+          attacker_fingerprint: string
+          behavioral_patterns?: Json | null
+          first_seen?: string | null
+          id?: string
+          incident_count?: number | null
+          known_aliases?: Json | null
+          last_seen?: string | null
+          platforms?: Json | null
+          risk_score?: number | null
+        }
+        Update: {
+          attacker_fingerprint?: string
+          behavioral_patterns?: Json | null
+          first_seen?: string | null
+          id?: string
+          incident_count?: number | null
+          known_aliases?: Json | null
+          last_seen?: string | null
+          platforms?: Json | null
+          risk_score?: number | null
+        }
+        Relationships: []
+      }
+      threat_incidents: {
+        Row: {
+          created_at: string | null
+          harasser_profile_url: string | null
+          harasser_username: string | null
+          id: string
+          incident_date: string
+          incident_description: string
+          linked_attacker_id: string | null
+          metadata: Json | null
+          platform: string
+          reporter_id: string
+          severity_level: string | null
+        }
+        Insert: {
+          created_at?: string | null
+          harasser_profile_url?: string | null
+          harasser_username?: string | null
+          id?: string
+          incident_date: string
+          incident_description: string
+          linked_attacker_id?: string | null
+          metadata?: Json | null
+          platform: string
+          reporter_id: string
+          severity_level?: string | null
+        }
+        Update: {
+          created_at?: string | null
+          harasser_profile_url?: string | null
+          harasser_username?: string | null
+          id?: string
+          incident_date?: string
+          incident_description?: string
+          linked_attacker_id?: string | null
+          metadata?: Json | null
+          platform?: string
+          reporter_id?: string
+          severity_level?: string | null
+        }
+        Relationships: []
+      }
+      tracking_links: {
+        Row: {
+          captures_count: number | null
+          created_at: string | null
+          description: string | null
+          id: string
+          is_active: boolean | null
+          link_code: string
+          target_url: string | null
+          title: string
+          user_id: string
+        }
+        Insert: {
+          captures_count?: number | null
+          created_at?: string | null
+          description?: string | null
+          id?: string
+          is_active?: boolean | null
+          link_code: string
+          target_url?: string | null
+          title: string
+          user_id: string
+        }
+        Update: {
+          captures_count?: number | null
+          created_at?: string | null
+          description?: string | null
+          id?: string
+          is_active?: boolean | null
+          link_code?: string
+          target_url?: string | null
+          title?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
