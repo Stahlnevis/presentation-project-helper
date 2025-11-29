@@ -1,6 +1,9 @@
 Team Name; SAFEGUARD (Group 20)
+
 Repository link; [https://github.com/Stahlnevis/Powerhack-GBV-SafeGuard-project.git]
+
 Tech Stack; Frontend (React 18.3, Vite, Tailwind CSS), Backend (Supabase)
+
 Team Members; Stahl Venis, Hussein mahmoud, Salome Mundia, Melissa Naisianoi
 
 
