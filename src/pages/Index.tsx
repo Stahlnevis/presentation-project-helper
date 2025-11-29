@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 
 const Index = () => {
   const navigate = useNavigate();
-  
+
   return (
     <div className="min-h-screen">
       <Navigation />
@@ -32,6 +32,14 @@ const Index = () => {
               onClick={() => navigate("/auth")}
             >
               Sign In
+            </Button>
+            <Button
+              size="lg"
+              variant="default"
+              className="bg-primary text-white hover:bg-primary/90"
+              onClick={() => navigate("/get-extension")}
+            >
+              Get Browser Extension
             </Button>
           </div>
         </div>

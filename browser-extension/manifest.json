@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "SafeGuard Evidence Protector",
+    "version": "1.0",
+    "description": "Detects screenshots and helps you secure digital evidence immediately.",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "contextMenus"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "SafeGuard Evidence"
+    },
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    }
+}

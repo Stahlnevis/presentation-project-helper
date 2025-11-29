@@ -11,6 +11,9 @@ import EvidenceVault from "./pages/EvidenceVault";
 import ThreatIntelligence from "./pages/ThreatIntelligence";
 import GeoTracking from "./pages/GeoTracking";
 import NotFound from "./pages/NotFound";
+import EvidenceIndex from "@/features/evidence-safe/pages/Index";
+import EvidenceCapture from "@/features/evidence-safe/pages/Capture";
+import ExtensionDownload from "./pages/ExtensionDownload";
 
 const queryClient = new QueryClient();
 
@@ -19,12 +22,14 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/get-extension" element={<ExtensionDownload />} />
           <Route path="/auth" element={<Auth />} />
           <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/evidence-vault" element={<EvidenceVault />} />
+          <Route path="/evidence-vault" element={<EvidenceIndex />} />
+          <Route path="/evidence-vault/capture" element={<EvidenceCapture />} />
           <Route path="/threat-intelligence" element={<ThreatIntelligence />} />
           <Route path="/geo-tracking" element={<GeoTracking />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

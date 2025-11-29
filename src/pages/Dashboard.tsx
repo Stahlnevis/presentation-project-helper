@@ -79,7 +79,7 @@ const Dashboard = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">
-          <Card 
+          <Card
             className="border-border/50 hover:border-secondary/50 transition-all duration-300 hover:shadow-glow cursor-pointer group"
             onClick={() => navigate("/evidence-vault")}
           >
@@ -99,7 +99,7 @@ const Dashboard = () => {
             </CardContent>
           </Card>
 
-          <Card 
+          <Card
             className="border-border/50 hover:border-secondary/50 transition-all duration-300 hover:shadow-glow cursor-pointer group"
             onClick={() => navigate("/threat-intelligence")}
           >
@@ -119,7 +119,7 @@ const Dashboard = () => {
             </CardContent>
           </Card>
 
-          <Card 
+          <Card
             className="border-border/50 hover:border-secondary/50 transition-all duration-300 hover:shadow-glow cursor-pointer group"
             onClick={() => navigate("/geo-tracking")}
           >
