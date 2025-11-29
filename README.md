@@ -7,6 +7,10 @@
 📊 Pitch Deck
 📈 View Presentation: [placeholder]
 
+🎥 Video Demonstration
+🎬 Watch Demo: [placeholder]
+Professional capstone demonstration showcasing the core features, workflow, and real-world functionality of the system.
+
 ## 🛡️ Project Overview
 
 **SafeGuard** is an innovative, full-stack web application designed to protect victims of Gender-Based Violence (GBV) through advanced digital security tools. Built for a hackathon, SafeGuard combines blockchain-level evidence preservation, AI-powered threat analysis, and geolocation tracking to provide comprehensive protection and documentation capabilities.
