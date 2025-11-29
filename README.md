@@ -1,3 +1,9 @@
+Team Name; SAFEGUARD (Group 20)
+Repository link; [https://github.com/Stahlnevis/Powerhack-GBV-SafeGuard-project.git]
+Tech Stack; Frontend (React 18.3, Vite, Tailwind CSS), Backend (Supabase)
+Team Members; Stahl Venis, Hussein mahmoud, Salome Mundia, Melissa Naisianoi
+
+
 # SafeGuard - GBV Protection Platform
 
 ![SafeGuard Platform](https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=1200&h=400&fit=crop)
@@ -5,10 +11,10 @@
 🌐 Frontend: [https://presentation-project-helper.vercel.app/]
 
 📊 Pitch Deck
-📈 View Presentation: [placeholder]
+📈 View Presentation: [https://docs.google.com/presentation/d/1OHduWvtr6ECDxlv1EzEEbOWQVKyJRSp1/edit?usp=sharing&ouid=106418218021717424767&rtpof=true&sd=true]
 
 🎥 Video Demonstration
-🎬 Watch Demo: [placeholder]
+🎬 Watch Demo: [https://drive.google.com/file/d/1OU4FZyFtQsd3m43nGIz5BDo3Hpvf-pBg/view]
 Professional capstone demonstration showcasing the core features, workflow, and real-world functionality of the system.
 
 ## 🛡️ Project Overview
@@ -35,7 +41,7 @@ Empower GBV survivors with professional-grade security tools to:
 - **Metadata Preservation**: Automatic capture of upload timestamp, device info, browser details
 
 ### 2. Cyber Threat Intelligence Engine 🧠
-- **AI-Powered Analysis**: Leverages Lovable AI (Google Gemini) to analyze harassment patterns
+- **AI-Powered Analysis**: Leverages AI (Google Gemini) to analyze harassment patterns
 - **Severity Assessment**: Automatic classification (Critical, High, Medium, Low)
 - **Cross-Platform Linking**: Connects harassers across Instagram, Facebook, Twitter, TikTok, etc.
 - **Repeat Offender Detection**: Fingerprinting system identifies serial harassers
@@ -62,7 +68,7 @@ Empower GBV survivors with professional-grade security tools to:
 - **React Router v6** for client-side routing
 - **Sonner** for elegant toast notifications
 
-### Backend (Lovable Cloud / Supabase)
+### Backend (Supabase Cloud / Supabase)
 - **PostgreSQL Database** with 5 core tables:
   - `evidence_items`: Encrypted evidence storage with hashing
   - `threat_incidents`: AI-analyzed harassment reports
@@ -87,7 +93,7 @@ supabase/functions/
 - **Input Validation**: Client and server-side validation with Zod schemas
 
 ### AI Integration
-- **Lovable AI Gateway**: Pre-configured AI access without API key management
+- **Gemini Pro AI Gateway**: Pre-configured AI access without API key management
 - **Model**: `google/gemini-2.5-flash` for balanced performance and cost
 - **Capabilities**: 
   - Natural language threat assessment
@@ -113,7 +119,7 @@ cd safeguard-gbv-platform
 # 2. Install dependencies
 npm install
 
-# 3. Environment setup (auto-configured via Lovable Cloud)
+# 3. Environment setup (auto-configured via Supabase Cloud)
 # .env file is automatically generated with:
 # - VITE_SUPABASE_URL
 # - VITE_SUPABASE_PUBLISHABLE_KEY
@@ -128,7 +134,7 @@ npm run dev
 
 ### Database Schema
 
-The database is automatically provisioned via Lovable Cloud. Key tables:
+The database is automatically provisioned via Supabase Cloud. Key tables:
 
 ```sql
 -- Evidence Items Table
@@ -294,8 +300,8 @@ Mentions my address and workplace. Escalating pattern."
 
 ## 🚢 Deployment
 
-### Via Lovable Platform (Recommended)
-1. Open your Lovable project
+### Via Antigravity Platform (Recommended)
+1. Open your Safeguard project
 2. Click **Publish** (top-right)
 3. Click **Update** to deploy frontend changes
 4. Edge functions deploy automatically
@@ -376,7 +382,7 @@ This project is open-source and available under the MIT License.
 
 ## 🙏 Acknowledgments
 
-- **Lovable Platform**: For the full-stack development environment
+- **Antigravity Platform**: For the full-stack development environment
 - **Supabase**: For the backend infrastructure
 - **Google Gemini AI**: For threat intelligence analysis
 - **shadcn/ui**: For the component library
@@ -385,10 +391,10 @@ This project is open-source and available under the MIT License.
 ---
 
 ## 📞 Contact & Support
-
-- **Project URL**: [https://lovable.dev/projects/216f08b7-b628-4393-a20b-925c8e7ea40b](https://lovable.dev/projects/216f08b7-b628-4393-a20b-925c8e7ea40b)
-- **Documentation**: This README + inline code comments
-- **Issues**: Use GitHub Issues for bug reports
+Mahmoud Hussein- [https://github.com/Mahmoudshee]
+Stahl Nevis- [https://github.com//stahlnevis]
+Salome Mundia- [https://github.com/Tornado-techie]
+Melissa Naisianoi- [https://github.com/MelissaMatindi]
 
 ---
 
