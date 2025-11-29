@@ -71,7 +71,7 @@ Empower GBV survivors with professional-grade security tools to:
 - **React Router v6** for client-side routing
 - **Sonner** for elegant toast notifications
 
-### Backend (Supabase Cloud / Supabase)
+### Backend (Supabase)
 - **PostgreSQL Database** with 5 core tables:
   - `evidence_items`: Encrypted evidence storage with hashing
   - `threat_incidents`: AI-analyzed harassment reports
@@ -122,7 +122,7 @@ cd safeguard-gbv-platform
 # 2. Install dependencies
 npm install
 
-# 3. Environment setup (auto-configured via Supabase Cloud)
+# 3. Environment setup (auto-configured via Supabase)
 # .env file is automatically generated with:
 # - VITE_SUPABASE_URL
 # - VITE_SUPABASE_PUBLISHABLE_KEY
@@ -137,7 +137,7 @@ npm run dev
 
 ### Database Schema
 
-The database is automatically provisioned via Supabase Cloud. Key tables:
+The database is automatically provisioned via Supabase . Key tables:
 
 ```sql
 -- Evidence Items Table
