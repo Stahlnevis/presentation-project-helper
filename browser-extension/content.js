@@ -77,7 +77,7 @@ function showSafeGuardModal() {
   document.body.appendChild(modal);
 
   document.getElementById('sg-secure-btn').addEventListener('click', () => {
-    window.open('https://presentation-project-helper.vercel.app/evidence-vault/capture', '_blank');
+    window.open('https://presentation-project-helper.vercel.app', '_blank');
     removeModal();
   });
 

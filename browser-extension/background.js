@@ -9,7 +9,7 @@ chrome.runtime.onInstalled.addListener(() => {
 chrome.contextMenus.onClicked.addListener((info, tab) => {
     if (info.menuItemId === "secureEvidence") {
         chrome.tabs.create({
-            url: "https://presentation-project-helper.vercel.app/evidence-vault/capture"
+            url: "https://presentation-project-helper.vercel.app"
         });
     }
 });
