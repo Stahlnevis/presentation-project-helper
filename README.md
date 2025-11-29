@@ -4,7 +4,7 @@ Repository link; [https://github.com/Stahlnevis/presentation-project-helper.git]
 
 Tech Stack; Frontend (React 18.3, Vite, Tailwind CSS), Backend (Supabase)
 
-Team Members; Stahl Venis, Hussein mahmoud, Salome Mundia, Melissa Naisianoi
+Team Members; Stahl Nevis, Mahmoud Hussein, Salome Mundia, Melissa Naisianoi
 
 
 # SafeGuard - GBV Protection Platform
