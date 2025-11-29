@@ -18,10 +18,10 @@ const Index = () => {
       <div className="bg-muted/30 py-8 text-center">
         <div className="container mx-auto px-6">
           <h3 className="text-2xl font-bold text-foreground mb-4">Ready to Protect Yourself?</h3>
-          <div className="flex gap-4 justify-center">
+          <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
             <Button
               size="lg"
-              className="bg-secondary text-primary hover:bg-secondary/90 font-semibold"
+              className="bg-secondary text-primary hover:bg-secondary/90 font-semibold w-full md:w-auto"
               onClick={() => navigate("/auth")}
             >
               Get Started Now
@@ -29,6 +29,7 @@ const Index = () => {
             <Button
               size="lg"
               variant="outline"
+              className="w-full md:w-auto"
               onClick={() => navigate("/auth")}
             >
               Sign In
@@ -36,7 +37,7 @@ const Index = () => {
             <Button
               size="lg"
               variant="default"
-              className="bg-primary text-white hover:bg-primary/90"
+              className="bg-primary text-white hover:bg-primary/90 w-full md:w-auto"
               onClick={() => navigate("/get-extension")}
             >
               Get Browser Extension
