@@ -414,4 +414,4 @@ Melissa Naisianoi- [https://github.com/MelissaMatindi]
 
 ---
 
-**Built with ❤️ for GBV survivors. Every feature, every line of code, serves one purpose: Safety.**
+**Built with Antigravity for GBV survivors. Every feature, every line of code, serves one purpose: Safety.**
